@@ -1,0 +1,60 @@
+# Hardware Setup
+
+## Components Used
+
+- Raspberry Pi
+- ADS1115 16-bit ADC
+- Geophone sensor
+- Signal amplifier module
+- Breadboard
+- Jumper wires
+- Power supply
+
+---
+
+## Wiring Configuration
+
+### ADS1115 Connections
+
+| ADS1115 Pin | Raspberry Pi Pin |
+|---|---|
+| VDD | 3.3V |
+| GND | GND |
+| SCL | GPIO3 / SCL |
+| SDA | GPIO2 / SDA |
+
+---
+
+### Amplifier Connections
+
+| Amplifier Pin | Connection |
+|---|---|
+| VCC | Raspberry Pi 3.3V |
+| GND | Common Ground |
+| A0 | ADS1115 A0 |
+
+---
+
+### Geophone Connections
+
+| Geophone | Connection |
+|---|---|
+| Positive | Amplifier Positive Input |
+| Negative | Ground |
+
+---
+
+## System Purpose
+
+The hardware system captures vibration signals from the geophone sensor and converts the analog signal into digital values using the ADS1115 ADC. The Raspberry Pi processes this data for signal analysis and machine learning classification.
+
+---
+
+## Current Prototype Capabilities
+
+- Real-time signal acquisition
+- CSV data logging
+- Signal preprocessing
+- Feature extraction
+- AI classification
+- Early warning simulation
