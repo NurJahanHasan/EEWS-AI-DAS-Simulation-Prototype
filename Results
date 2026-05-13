@@ -1,0 +1,35 @@
+# Results Summary
+
+## Prototype Testing
+
+The prototype successfully demonstrated basic seismic signal acquisition, preprocessing, and machine learning classification.
+
+---
+
+## Current Features
+
+- Real-time signal acquisition
+- CSV data logging
+- Statistical feature extraction
+- FFT analysis
+- Basic machine learning classification
+- Early warning simulation
+
+---
+
+## Observations
+
+- Noise signals showed lower amplitude variation.
+- Simulated P-wave-like signals produced earlier detectable patterns.
+- Simulated S-wave-like signals showed larger amplitude activity.
+
+---
+
+## Future Improvements
+
+- Real seismic waveform integration
+- Larger training datasets
+- Improved AI models
+- Real-time alert deployment
+- GPU acceleration
+- Expanded sensor network
