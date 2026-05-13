@@ -1,0 +1,81 @@
+# System Architecture
+
+## Overview
+
+The prototype is designed as a simplified Earthquake Early Warning System (EEWS) using embedded sensing, signal processing, and machine learning.
+
+---
+
+## System Flow
+
+Geophone Sensor
+↓
+Amplifier Circuit
+↓
+ADS1115 ADC
+↓
+Raspberry Pi
+↓
+Signal Processing
+↓
+Feature Extraction
+↓
+Machine Learning Classification
+↓
+Early Warning Logic
+↓
+Alert Output
+
+---
+
+## Main Functional Blocks
+
+### 1. Signal Acquisition
+
+The geophone captures vibration signals from surrounding motion and converts them into electrical signals.
+
+---
+
+### 2. Signal Amplification
+
+The amplifier increases low-level seismic signals for easier ADC reading and processing.
+
+---
+
+### 3. Analog-to-Digital Conversion
+
+The ADS1115 converts analog seismic signals into digital values readable by the Raspberry Pi.
+
+---
+
+### 4. Signal Processing
+
+The Raspberry Pi filters and processes incoming signals before extracting useful features.
+
+---
+
+### 5. Feature Extraction
+
+The system extracts statistical and frequency-domain features including:
+
+- RMS
+- Mean
+- Standard deviation
+- FFT frequency components
+- Zero crossing rate
+
+---
+
+### 6. Machine Learning Classification
+
+The AI model classifies signals into categories such as:
+
+- Noise
+- P-wave-like signal
+- S-wave-like signal
+
+---
+
+### 7. Early Warning Logic
+
+If a P-wave-like signal is detected before an S-wave-like signal, the system can trigger an early warning countdown simulation.
